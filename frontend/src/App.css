@@ -1,0 +1,39 @@
+.App {
+  text-align: center;
+}
+
+.App-header {
+  background-color: #282c34;
+  padding: 20px;
+  color: white;
+}
+
+.weather-card {
+  margin: 16px;
+  padding: 16px;
+}
+
+.temperature {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #1976d2;
+}
+
+.weather-icon {
+  font-size: 4rem;
+}
+
+.chart-container {
+  height: 400px;
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  .temperature {
+    font-size: 2rem;
+  }
+  
+  .weather-icon {
+    font-size: 3rem;
+  }
+}
