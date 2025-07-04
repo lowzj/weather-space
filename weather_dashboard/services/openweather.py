@@ -114,7 +114,7 @@ class OpenWeatherMapService:
                 'feels_like': main.get('feels_like'),
                 'humidity': main.get('humidity'),
                 'pressure': main.get('pressure'),
-                'visibility': data.get('visibility', 0) / 1000 if data.get('visibility') else None,  # Convert to km
+                'visibility': data.get('visibility', 0) / 1000 if data.get('visibility') is not None else None,  # Convert to km
                 'wind_speed': wind.get('speed'),
                 'wind_direction': wind.get('deg'),
                 'weather_condition': weather.get('main'),
